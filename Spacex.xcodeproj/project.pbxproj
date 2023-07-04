@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F55AF7B0280BE3AD0052614E /* Launche.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55AF7AF280BE3AC0052614E /* Launche.swift */; };
+		F55AF7B2280BE5E50052614E /* LauncheViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55AF7B1280BE5E50052614E /* LauncheViewModel.swift */; };
+		F55AF7B4280BE6020052614E /* LauncheView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55AF7B3280BE6020052614E /* LauncheView.swift */; };
+		F55AF7B7280BE99C0052614E /* LauncheDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55AF7B6280BE99C0052614E /* LauncheDetailsView.swift */; };
+		F55AF7B9280BEA350052614E /* LauncheDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55AF7B8280BEA350052614E /* LauncheDetailsViewModel.swift */; };
+		F55AF7BB280C46220052614E /* SuccessImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55AF7BA280C46220052614E /* SuccessImageView.swift */; };
+		F55AF7BD280C4ACF0052614E /* RocketParameterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55AF7BC280C4ACF0052614E /* RocketParameterView.swift */; };
+		F55AF7BF280C4D610052614E /* RocketParameterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55AF7BE280C4D610052614E /* RocketParameterListView.swift */; };
+		F569A48B28729AE8002BA3DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F569A48A28729AE8002BA3DC /* AppDelegate.swift */; };
+		F571BEED286568B7000A5CE0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F571BEEC286568B7000A5CE0 /* SettingsView.swift */; };
+		F58DC6572873FDA60043BC80 /* CustomFormatNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58DC6562873FDA60043BC80 /* CustomFormatNumber.swift */; };
+		F5BE63292869A05B00467A13 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BE63282869A05B00467A13 /* SettingsRowView.swift */; };
+		F5CC957B2808568F003A3E8D /* SpacexApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CC957A2808568F003A3E8D /* SpacexApp.swift */; };
+		F5CC957D2808568F003A3E8D /* RocketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CC957C2808568F003A3E8D /* RocketView.swift */; };
+		F5CC957F28085692003A3E8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5CC957E28085692003A3E8D /* Assets.xcassets */; };
+		F5CC958228085692003A3E8D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5CC958128085692003A3E8D /* Preview Assets.xcassets */; };
+		F5CC95892808574C003A3E8D /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CC95882808574C003A3E8D /* Rocket.swift */; };
+		F5CC958B28085A6D003A3E8D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CC958A28085A6C003A3E8D /* NetworkManager.swift */; };
+		F5CC958D2809541D003A3E8D /* RocketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CC958C2809541D003A3E8D /* RocketViewModel.swift */; };
+		F5CC9592280976BC003A3E8D /* RocketImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CC9591280976BB003A3E8D /* RocketImageView.swift */; };
+		F5CC959628097D5D003A3E8D /* RocketPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CC959528097D5D003A3E8D /* RocketPageView.swift */; };
+		F5CC959828099968003A3E8D /* RocketPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CC959728099968003A3E8D /* RocketPageViewModel.swift */; };
+		F5CC959A280A9398003A3E8D /* LabGrotesque-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5CC9599280A9397003A3E8D /* LabGrotesque-Regular.ttf */; };
+		F5CC959D280AA267003A3E8D /* LabGrotesque-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5CC959C280AA267003A3E8D /* LabGrotesque-Bold.ttf */; };
+		F5CC959F280AA398003A3E8D /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CC959E280AA398003A3E8D /* Color+Extension.swift */; };
+		F5CC95A2280AB176003A3E8D /* RocketStagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CC95A1280AB175003A3E8D /* RocketStagesView.swift */; };
+		F5CC95A4280AB1A2003A3E8D /* RocketStagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CC95A3280AB1A2003A3E8D /* RocketStagesViewModel.swift */; };
+		F5CC95A6280ABB05003A3E8D /* RocketDetailsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CC95A5280ABB05003A3E8D /* RocketDetailsRowView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F55AF7AF280BE3AC0052614E /* Launche.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launche.swift; sourceTree = "<group>"; };
+		F55AF7B1280BE5E50052614E /* LauncheViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncheViewModel.swift; sourceTree = "<group>"; };
+		F55AF7B3280BE6020052614E /* LauncheView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncheView.swift; sourceTree = "<group>"; };
+		F55AF7B6280BE99C0052614E /* LauncheDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncheDetailsView.swift; sourceTree = "<group>"; };
+		F55AF7B8280BEA350052614E /* LauncheDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncheDetailsViewModel.swift; sourceTree = "<group>"; };
+		F55AF7BA280C46220052614E /* SuccessImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessImageView.swift; sourceTree = "<group>"; };
+		F55AF7BC280C4ACF0052614E /* RocketParameterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketParameterView.swift; sourceTree = "<group>"; };
+		F55AF7BE280C4D610052614E /* RocketParameterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketParameterListView.swift; sourceTree = "<group>"; };
+		F569A48A28729AE8002BA3DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F571BEEC286568B7000A5CE0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F58DC6562873FDA60043BC80 /* CustomFormatNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFormatNumber.swift; sourceTree = "<group>"; };
+		F5BE63282869A05B00467A13 /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
+		F5CC95772808568F003A3E8D /* Spacex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spacex.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5CC957A2808568F003A3E8D /* SpacexApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacexApp.swift; sourceTree = "<group>"; };
+		F5CC957C2808568F003A3E8D /* RocketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketView.swift; sourceTree = "<group>"; };
+		F5CC957E28085692003A3E8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5CC958128085692003A3E8D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F5CC95882808574C003A3E8D /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
+		F5CC958A28085A6C003A3E8D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		F5CC958C2809541D003A3E8D /* RocketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketViewModel.swift; sourceTree = "<group>"; };
+		F5CC9591280976BB003A3E8D /* RocketImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketImageView.swift; sourceTree = "<group>"; };
+		F5CC959528097D5D003A3E8D /* RocketPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketPageView.swift; sourceTree = "<group>"; };
+		F5CC959728099968003A3E8D /* RocketPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketPageViewModel.swift; sourceTree = "<group>"; };
+		F5CC9599280A9397003A3E8D /* LabGrotesque-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabGrotesque-Regular.ttf"; sourceTree = "<group>"; };
+		F5CC959C280AA267003A3E8D /* LabGrotesque-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabGrotesque-Bold.ttf"; sourceTree = "<group>"; };
+		F5CC959E280AA398003A3E8D /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		F5CC95A1280AB175003A3E8D /* RocketStagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketStagesView.swift; sourceTree = "<group>"; };
+		F5CC95A3280AB1A2003A3E8D /* RocketStagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketStagesViewModel.swift; sourceTree = "<group>"; };
+		F5CC95A5280ABB05003A3E8D /* RocketDetailsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailsRowView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5CC95742808568F003A3E8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F55AF7B5280BE60B0052614E /* LauncheView */ = {
+			isa = PBXGroup;
+			children = (
+				F55AF7B3280BE6020052614E /* LauncheView.swift */,
+				F55AF7B1280BE5E50052614E /* LauncheViewModel.swift */,
+				F55AF7B6280BE99C0052614E /* LauncheDetailsView.swift */,
+				F55AF7B8280BEA350052614E /* LauncheDetailsViewModel.swift */,
+				F55AF7BA280C46220052614E /* SuccessImageView.swift */,
+			);
+			path = LauncheView;
+			sourceTree = "<group>";
+		};
+		F569A48C28729B40002BA3DC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F569A48A28729AE8002BA3DC /* AppDelegate.swift */,
+				F5CC957A2808568F003A3E8D /* SpacexApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F571BEEB28656540000A5CE0 /* SetingsView */ = {
+			isa = PBXGroup;
+			children = (
+				F571BEEC286568B7000A5CE0 /* SettingsView.swift */,
+				F5BE63282869A05B00467A13 /* SettingsRowView.swift */,
+			);
+			path = SetingsView;
+			sourceTree = "<group>";
+		};
+		F5C460D628617EB60099EAEC /* RocketParameterView */ = {
+			isa = PBXGroup;
+			children = (
+				F55AF7BC280C4ACF0052614E /* RocketParameterView.swift */,
+				F55AF7BE280C4D610052614E /* RocketParameterListView.swift */,
+			);
+			path = RocketParameterView;
+			sourceTree = "<group>";
+		};
+		F5CC956E2808568F003A3E8D = {
+			isa = PBXGroup;
+			children = (
+				F5CC95792808568F003A3E8D /* Spacex */,
+				F5CC95782808568F003A3E8D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5CC95782808568F003A3E8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5CC95772808568F003A3E8D /* Spacex.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5CC95792808568F003A3E8D /* Spacex */ = {
+			isa = PBXGroup;
+			children = (
+				F569A48C28729B40002BA3DC /* App */,
+				F5CC95902809739F003A3E8D /* RocketView */,
+				F55AF7B5280BE60B0052614E /* LauncheView */,
+				F571BEEB28656540000A5CE0 /* SetingsView */,
+				F5CC958F28097360003A3E8D /* Models */,
+				F5CC958E28097335003A3E8D /* Services */,
+				F5CC95A0280AA3A2003A3E8D /* Colors */,
+				F5CC959B280A93A4003A3E8D /* Fonts */,
+				F5F97C6E2875678200A67513 /* Helpers */,
+				F5F97C6D2875670C00A67513 /* Resources */,
+				F5F97C702875835100A67513 /* Preview Content */,
+			);
+			path = Spacex;
+			sourceTree = "<group>";
+		};
+		F5CC958E28097335003A3E8D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F5CC958A28085A6C003A3E8D /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F5CC958F28097360003A3E8D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F5CC95882808574C003A3E8D /* Rocket.swift */,
+				F55AF7AF280BE3AC0052614E /* Launche.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F5CC95902809739F003A3E8D /* RocketView */ = {
+			isa = PBXGroup;
+			children = (
+				F5CC957C2808568F003A3E8D /* RocketView.swift */,
+				F5CC958C2809541D003A3E8D /* RocketViewModel.swift */,
+				F5CC959528097D5D003A3E8D /* RocketPageView.swift */,
+				F5CC959728099968003A3E8D /* RocketPageViewModel.swift */,
+				F5CC95A1280AB175003A3E8D /* RocketStagesView.swift */,
+				F5CC95A3280AB1A2003A3E8D /* RocketStagesViewModel.swift */,
+				F5CC95A5280ABB05003A3E8D /* RocketDetailsRowView.swift */,
+				F5CC9591280976BB003A3E8D /* RocketImageView.swift */,
+				F5C460D628617EB60099EAEC /* RocketParameterView */,
+			);
+			path = RocketView;
+			sourceTree = "<group>";
+		};
+		F5CC959B280A93A4003A3E8D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F5CC9599280A9397003A3E8D /* LabGrotesque-Regular.ttf */,
+				F5CC959C280AA267003A3E8D /* LabGrotesque-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F5CC95A0280AA3A2003A3E8D /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				F5CC959E280AA398003A3E8D /* Color+Extension.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		F5F97C6D2875670C00A67513 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F5CC957E28085692003A3E8D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F5F97C6E2875678200A67513 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F58DC6562873FDA60043BC80 /* CustomFormatNumber.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F5F97C702875835100A67513 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F5CC958128085692003A3E8D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5CC95762808568F003A3E8D /* Spacex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5CC958528085692003A3E8D /* Build configuration list for PBXNativeTarget "Spacex" */;
+			buildPhases = (
+				F5CC95732808568F003A3E8D /* Sources */,
+				F5CC95742808568F003A3E8D /* Frameworks */,
+				F5CC95752808568F003A3E8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spacex;
+			productName = Spacex;
+			productReference = F5CC95772808568F003A3E8D /* Spacex.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5CC956F2808568F003A3E8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					F5CC95762808568F003A3E8D = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = F5CC95722808568F003A3E8D /* Build configuration list for PBXProject "Spacex" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5CC956E2808568F003A3E8D;
+			productRefGroup = F5CC95782808568F003A3E8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5CC95762808568F003A3E8D /* Spacex */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5CC95752808568F003A3E8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5CC958228085692003A3E8D /* Preview Assets.xcassets in Resources */,
+				F5CC959D280AA267003A3E8D /* LabGrotesque-Bold.ttf in Resources */,
+				F5CC957F28085692003A3E8D /* Assets.xcassets in Resources */,
+				F5CC959A280A9398003A3E8D /* LabGrotesque-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5CC95732808568F003A3E8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F55AF7B9280BEA350052614E /* LauncheDetailsViewModel.swift in Sources */,
+				F55AF7BD280C4ACF0052614E /* RocketParameterView.swift in Sources */,
+				F5CC95A4280AB1A2003A3E8D /* RocketStagesViewModel.swift in Sources */,
+				F5CC958D2809541D003A3E8D /* RocketViewModel.swift in Sources */,
+				F55AF7B4280BE6020052614E /* LauncheView.swift in Sources */,
+				F55AF7B0280BE3AD0052614E /* Launche.swift in Sources */,
+				F55AF7B7280BE99C0052614E /* LauncheDetailsView.swift in Sources */,
+				F5CC959F280AA398003A3E8D /* Color+Extension.swift in Sources */,
+				F5CC959828099968003A3E8D /* RocketPageViewModel.swift in Sources */,
+				F55AF7B2280BE5E50052614E /* LauncheViewModel.swift in Sources */,
+				F5CC958B28085A6D003A3E8D /* NetworkManager.swift in Sources */,
+				F5CC9592280976BC003A3E8D /* RocketImageView.swift in Sources */,
+				F5CC95A6280ABB05003A3E8D /* RocketDetailsRowView.swift in Sources */,
+				F5CC95892808574C003A3E8D /* Rocket.swift in Sources */,
+				F5CC957D2808568F003A3E8D /* RocketView.swift in Sources */,
+				F571BEED286568B7000A5CE0 /* SettingsView.swift in Sources */,
+				F58DC6572873FDA60043BC80 /* CustomFormatNumber.swift in Sources */,
+				F5CC957B2808568F003A3E8D /* SpacexApp.swift in Sources */,
+				F5CC959628097D5D003A3E8D /* RocketPageView.swift in Sources */,
+				F55AF7BB280C46220052614E /* SuccessImageView.swift in Sources */,
+				F5BE63292869A05B00467A13 /* SettingsRowView.swift in Sources */,
+				F55AF7BF280C4D610052614E /* RocketParameterListView.swift in Sources */,
+				F5CC95A2280AB176003A3E8D /* RocketStagesView.swift in Sources */,
+				F569A48B28729AE8002BA3DC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F5CC958328085692003A3E8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5CC958428085692003A3E8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5CC958628085692003A3E8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Spacex/Preview Content\"";
+				DEVELOPMENT_TEAM = 3KSQQS7C6X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alex.Spacex;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F5CC958728085692003A3E8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Spacex/Preview Content\"";
+				DEVELOPMENT_TEAM = 3KSQQS7C6X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alex.Spacex;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5CC95722808568F003A3E8D /* Build configuration list for PBXProject "Spacex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5CC958328085692003A3E8D /* Debug */,
+				F5CC958428085692003A3E8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5CC958528085692003A3E8D /* Build configuration list for PBXNativeTarget "Spacex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5CC958628085692003A3E8D /* Debug */,
+				F5CC958728085692003A3E8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5CC956F2808568F003A3E8D /* Project object */;
+}
